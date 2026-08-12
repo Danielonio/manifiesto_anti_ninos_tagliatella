@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Botón de compartir ---
   const shareUrl = "https://danielonio.github.io/manifiesto_anti_ninos_tagliatella/";
   const shareTitle = "Manifiesto Anti Niños Tagliatella 🍝📱";
-  const shareText = "Firma el Manifiesto Anti Niños Tagliatella: la lucha contra las pantallas como niñera en los restaurantes.";
+  const shareText = "Firma el Manifiesto Anti Niños Tagliatella.";
   const feedback = document.getElementById("compartir-feedback");
 
   const showFeedback = (msg) => {
