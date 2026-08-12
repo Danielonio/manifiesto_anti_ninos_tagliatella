@@ -1,0 +1,207 @@
+:root {
+  --bg: #faf6ef;
+  --ink: #23302c;
+  --petrol: #1f5f5b;
+  --petrol-dark: #143f3d;
+  --mustard: #d9a441;
+  --mustard-dark: #b9822a;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 24px rgba(20, 32, 29, 0.08);
+  --font-display: "Lato", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Lato", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h1, h2, h3 { line-height: 1.15; font-family: var(--font-display); font-weight: 700; }
+
+.hero {
+  background: linear-gradient(160deg, var(--petrol) 0%, var(--petrol-dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.hero-inner { padding-top: 4rem; }
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  opacity: 0.75;
+  margin-bottom: 1.2rem;
+}
+
+.hero-title-wrap { margin-bottom: 1.5rem; }
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 7vw, 4.4rem);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.hero-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  margin-top: 0.15em;
+}
+
+.hero-emoji {
+  font-size: 0.7em;
+}
+
+.hero-highlight {
+  color: var(--mustard);
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2.2rem;
+  opacity: 0.92;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--mustard);
+  color: var(--petrol-dark);
+  font-family: var(--font-body);
+  font-weight: 600;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cta:hover { transform: translateY(-2px) scale(1.02); background: var(--mustard-dark); }
+
+.escena p { font-size: 1.1rem; }
+.escena .pero { display: block; margin-top: 1rem; color: var(--petrol-dark); font-weight: 600; }
+
+.diagrama { text-align: center; }
+.diagrama .lead { color: #6b5849; margin-bottom: 2rem; }
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.flow-step {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+  width: 190px;
+  text-align: center;
+}
+
+.flow-step h3 { font-size: 1rem; margin: 0.4rem 0; }
+.flow-step p { font-size: 0.85rem; color: #6b5849; margin: 0; }
+.flow-step .emoji { font-size: 2rem; }
+
+.highlight-step { border: 2px solid var(--mustard); }
+.warn-step { border: 2px solid var(--mustard-dark); }
+.danger-step { border: 2px solid var(--petrol-dark); background: #fdf1e2; }
+
+.arrow {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.moraleja {
+  background: #eaf1ee;
+  border-left: 4px solid var(--petrol);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.manifiesto { background: #fff; border-radius: 24px; box-shadow: var(--shadow); }
+
+.manifiesto-list {
+  padding-left: 1.2rem;
+}
+
+.manifiesto-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.recurso-card {
+  display: block;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.4rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.recurso-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(43, 29, 20, 0.15);
+}
+
+.recurso-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--petrol-dark);
+}
+
+.recurso-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #5c4a3c;
+}
+
+.footer {
+  text-align: center;
+  color: #8a7364;
+}
+
+.footer .small { font-size: 0.85rem; }
+
+@media (max-width: 640px) {
+  .flow-step { width: 100%; }
+  .arrow { transform: rotate(90deg); }
+}
