@@ -103,6 +103,50 @@ h1, h2, h3 { line-height: 1.15; font-family: var(--font-display); font-weight: 7
 .escena p { font-size: 1.1rem; }
 .escena .pero { display: block; margin-top: 1rem; color: var(--petrol-dark); font-weight: 600; }
 
+.definicion { padding-top: 2.5rem; padding-bottom: 0.5rem; }
+
+.definicion-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border-left: 6px solid var(--mustard);
+  padding: 1.8rem 2rem;
+}
+
+.definicion-termino {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--petrol-dark);
+  margin: 0 0 0.8rem;
+}
+
+.definicion-clase {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #8a7364;
+  margin-left: 0.4rem;
+}
+
+.definicion-lista {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+.definicion-lista li {
+  margin-bottom: 0.6rem;
+  font-size: 1.02rem;
+}
+
+.definicion-etimologia {
+  font-size: 0.95rem;
+  color: #6b5849;
+  margin: 0;
+}
+
 .diagrama { text-align: center; }
 .diagrama .lead { color: #6b5849; margin-bottom: 2rem; }
 
