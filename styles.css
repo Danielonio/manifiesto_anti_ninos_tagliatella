@@ -141,12 +141,6 @@ h1, h2, h3 { line-height: 1.15; font-family: var(--font-display); font-weight: 7
   font-size: 1.02rem;
 }
 
-.definicion-etimologia {
-  font-size: 0.95rem;
-  color: #6b5849;
-  margin: 0;
-}
-
 .diagrama { text-align: center; }
 .diagrama .lead { color: #6b5849; margin-bottom: 2rem; }
 
@@ -192,6 +186,29 @@ h1, h2, h3 { line-height: 1.15; font-family: var(--font-display); font-weight: 7
 
 .manifiesto { background: #fff; border-radius: 24px; box-shadow: var(--shadow); }
 
+.sociedad .lead { color: #6b5849; margin-bottom: 1.5rem; }
+.sociedad > p { font-size: 1.1rem; }
+
+.sociedad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.sociedad-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  border-top: 4px solid var(--petrol);
+}
+
+.sociedad-card .emoji { font-size: 2rem; margin-bottom: 0.5rem; }
+.sociedad-card h3 { font-size: 1.05rem; margin: 0 0 0.5rem; }
+.sociedad-card p { font-size: 0.92rem; color: #5c4a3c; margin: 0; }
+.sociedad-card:last-child { border-top-color: var(--mustard-dark); }
+
 .manifiesto-list {
   padding-left: 1.2rem;
 }
@@ -199,6 +216,64 @@ h1, h2, h3 { line-height: 1.15; font-family: var(--font-display); font-weight: 7
 .manifiesto-list li {
   margin-bottom: 1rem;
   font-size: 1.05rem;
+}
+
+.compartir {
+  margin-top: 2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid #eee1d0;
+  text-align: center;
+}
+
+.compartir-texto {
+  font-size: 1.02rem;
+  color: #5c4a3c;
+  margin-bottom: 1.1rem;
+}
+
+.compartir-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.compartir-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--card-bg);
+  border: 1px solid #e4d7c4;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.compartir-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.compartir-btn-principal {
+  background: var(--petrol);
+  color: #fff;
+  border-color: var(--petrol);
+}
+
+.compartir-btn-principal:hover { background: var(--petrol-dark); }
+
+.compartir-feedback {
+  min-height: 1.2rem;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--petrol-dark);
+  font-weight: 600;
 }
 
 .recursos-grid {
